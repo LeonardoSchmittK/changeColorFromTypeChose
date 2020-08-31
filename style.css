@@ -1,0 +1,82 @@
+*{
+ box-sizing: border-box; 
+ margin:0; padding:0;
+} 
+
+section.container{
+  max-width: 500px; 
+  height:200px; 
+  background:rgb(179, 179, 179);
+  margin:auto; 
+  border-radius:25px; 
+  box-shadow:0 0 30px rgba(143, 143, 143, 0.657); 
+  display:flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  margin-top:12rem;
+  position: relative;
+}
+
+h1{
+ font-family:Roboto, sans-serif; 
+ color:#FFF; 
+ font-size:3rem;
+ margin-bottom:1rem; 
+ position: relative;
+} 
+
+button{
+  font-size:2rem; 
+  border-radius:4px; 
+ border-top: none;
+ border-right: none;
+ border-left: none;
+  border-bottom:4px solid rgba(128, 128, 128, 0.424); 
+  outline:none; 
+  width:90%; 
+  padding:0.4rem 0;
+  font-family:Roboto; 
+  font-weight: bold; 
+  color:rgb(59, 59, 59);
+  text-shadow:0 0 10px rgb(190, 190, 190); 
+  box-shadow: 0 0 10px #ffffff32;
+  letter-spacing: .4rem; 
+  text-transform:uppercase;  
+  cursor: pointer; 
+  transition:0.3s;
+ }
+button:hover{
+  transform: scale(1.06) ;
+  transition:0.3s; 
+  
+}
+div.chooseColor{
+  background:rgb(250, 250, 250); 
+  width:50%;
+  height: auto; 
+  text-align:center;
+  border-radius:.3rem; 
+  margin-top:.4rem;
+}
+label{
+ padding-left:1rem;
+ font-family:Lato,sans-serif;
+ color:grey;
+}
+input{
+ cursor: pointer;
+}
+
+@media only screen and (max-width:600px){
+  h1{
+   font-size:2.5rem;
+  } 
+  div#chooseColor{
+    display: flex;
+   flex-direction: column; 
+   justify-content: center; 
+   align-items: center; 
+   background-color:green;
+  }
+}
